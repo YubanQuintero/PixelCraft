@@ -195,7 +195,7 @@ header{
 }
 
 .text__card-primary p{
-    color: var(--color_text-primary);
+    color: var(black);
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
@@ -204,7 +204,7 @@ header{
 .text__card-primary h1{
     font-size: var(--text_size_title);
     font-weight: 600;
-    color: var(--color_text-secundary);
+    color: var(black);
 }
 
 .container__box-cardPrimary{
@@ -221,6 +221,7 @@ header{
     border-radius: 20px;
     margin: 14px;
     transition: all 300ms;
+    background-color: white;
 }
 
 .box__card-primary:hover{
@@ -334,34 +335,111 @@ header{
     transform: scale(1.05); 
     transition: transform 0.3s ease; 
 }
-.cotainer_fork{
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
+.body {
+    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    min-height: 100vh;
+    background-color: rgb(244, 244, 244);
 }
-.cover_fork{
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
+
+/* Estilo para el contenedor principal */
+.container {
     display: flex;
-    align-items: center;
-    padding: 0px 20px;
-}
-.text_fork{
-    width: 100%;
-    padding-right: 40px;
-}
-.text__cover{
-    display: grid;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: auto;
+    height: 75vh;
+    padding: 0 10%;
 }
-.map-container{
-    height: 600px;
+
+/* Estilo general para el formulario */
+.contact-form {
+    display: flex;
+    flex-direction: row;  /* Para colocar la imagen y el formulario en línea */
+    justify-content: space-between;
+    text-align: left;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 800px;  /* Más ancho */
+    height: auto;  /* Se ajusta al contenido */
+    gap: 20px;  /* Espacio entre el formulario y la imagen */
+}
+
+/* Sección del formulario */
+.contact-form form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;  /* Texto más grande */
+}
+
+input, textarea {
+    width: 100%;  /* Ajusta el ancho al 100% del contenedor */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;  /* Tamaño más grande */
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #fcdc60;  /* Color del header */
+    color: #333;  /* Color oscuro */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e6c656;
+}
+
+/* Sección de la imagen */
+.image-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.image-container img {
+    max-width: 200px;  /* Ajusta el tamaño de la imagen */
+}
+
+.map-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 800px;  /* Ancho del contenedor del mapa */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;  /* Centramos el cuadro del mapa */
+}
+
+/* Ajustar el iframe del mapa */
+.map-container iframe {
+    width: 100%;   /* El iframe ocupará todo el ancho del contenedor */
+    height: 400px; /* Altura fija del mapa */
+    width: 700px;
+    border: 0;     /* Sin borde en el iframe */
+    border-radius: 15px;  /* Bordes redondeados para el mapa */
 }
