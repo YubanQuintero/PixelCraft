@@ -11,7 +11,7 @@
 :root{
     --color_text-primary: #69532e;
     --color_text-secundary: black;
-    --color_text-tertiary: #155404;
+    --color_text-tertiary: #69532e;
     --main_color-primary: #69532e;
     --main_color-secundary: #f5f5dc46;
     --background-color: #f5f5dc46;
@@ -22,8 +22,6 @@
     --text_paragraph: 16px;
     --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
 }
-
-/*Header*/
 
 header{
     width: 100%;
@@ -110,9 +108,15 @@ header{
     width: 20px;
 }
 
-/*End Header*/
-
-/*Portada Inicio*/
+.contotno{
+    
+    color: black;  
+    text-shadow: 
+        -1px -1px 0 white,  
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white; 
+}
 
 .container__cover{
     padding-top: 100px;
@@ -147,7 +151,7 @@ header{
 
 .btn__text{
     display: block;
-    width: 150px;
+    width: 200px;
     margin-top: 40px;
     padding: 10px 20px;
     text-align: center;
@@ -173,10 +177,6 @@ header{
 .image__cover img{
     width: 550px;
 }
-
-/*End Portada Inicio*/
-
-/*Estilos Generales Cards*/
 
 .container__card-primary{
     padding-top: 100px;
@@ -239,10 +239,6 @@ header{
     margin-top: 20px;
 }
 
-/*End Estilos Generales Cards*/
-
-/*Sobre Nosotros*/
-
 .container__about{
     padding: 100px 0px;
     background: var(--background-color);
@@ -256,6 +252,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 25px;
 }
 
 .text__about{
@@ -265,13 +262,14 @@ header{
 
 .text__about h1{
     color: var(--color_text-secundary);
-    font-weight: 600;
+    font-weight: 1200;
 }
 
 .text__about p{
     font-size: var(--text_paragraph);
     margin-top: 40px;
     color: var(--color_text-tertiary);
+    font-size: 20px;
 }
 
 
@@ -281,12 +279,8 @@ header{
 }
 
 .image__about img{
-    width: 300px;
+    width: 200px;
 }
-
-/*End Sobre Nosotros*/
-
-/*Servicios*/
 
 .card__service img{
     width: 50px;
@@ -298,10 +292,6 @@ header{
     cursor: pointer;
     color: var(--color_text-primary);
 }
-
-/*End Servicios*/
-
-/*Proyectos*/
 
 .container__proyect{
     padding: 100px 0px;
@@ -344,7 +334,6 @@ header{
     background-color: rgb(244, 244, 244);
 }
 
-/* Estilo para el contenedor principal */
 .container {
     display: flex;
     flex-direction: column;
@@ -354,19 +343,18 @@ header{
     padding: 0 10%;
 }
 
-/* Estilo general para el formulario */
 .contact-form {
     display: flex;
-    flex-direction: row;  /* Para colocar la imagen y el formulario en línea */
+    flex-direction: row;  
     justify-content: space-between;
     text-align: left;
     background-color: white;
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 800px;  /* Más ancho */
-    height: auto;  /* Se ajusta al contenido */
-    gap: 20px;  /* Espacio entre el formulario y la imagen */
+    width: 800px;  
+    height: auto;  
+    gap: 20px;  
 }
 
 /* Sección del formulario */
@@ -422,24 +410,33 @@ button:hover {
     max-width: 200px;  /* Ajusta el tamaño de la imagen */
 }
 
-.map-box {
+.video-section{
+    text-align: center;
     background-color: white;
-    padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 800px;  /* Ancho del contenedor del mapa */
-    height: auto;
+    width: 800px;  
+    height: 345px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;  /* Centramos el cuadro del mapa */
+    margin: 0 auto;  
+    flex-direction: column;
+    padding: 10px;
 }
 
-/* Ajustar el iframe del mapa */
-.map-container iframe {
-    width: 100%;   /* El iframe ocupará todo el ancho del contenedor */
-    height: 400px; /* Altura fija del mapa */
-    width: 700px;
-    border: 0;     /* Sin borde en el iframe */
-    border-radius: 15px;  /* Bordes redondeados para el mapa */
+.video-container{
+    width: 200%;
+    height: 200%;
+    align-items: initial;
+}
+footer{
+    background-color: white;
+    border-top: 3px solid #f9eeb0;
+    text-align: center;
+    color: #69532e;
+}
+footer a{
+    color: #fcdc60;
+    text-decoration: underline;
 }
