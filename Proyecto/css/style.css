@@ -108,15 +108,13 @@ header{
     width: 20px;
 }
 
-.contotno{
-    
-    color: black;  
+.contorno {
+    color: white;  
     text-shadow: 
-        -1px -1px 0 white,  
-        1px -1px 0 white,
-        -1px 1px 0 white,
-        1px 1px 0 white; 
+        -2px 2px 4px rgba(0, 0, 0, 0.8),  
+        2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
 
 .container__cover{
     padding-top: 100px;
