@@ -355,7 +355,7 @@ header{
     gap: 20px;  
 }
 
-/* Sección del formulario */
+
 .contact-form form {
     width: 100%;
 }
@@ -370,21 +370,45 @@ header{
 label {
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 18px;  /* Texto más grande */
+    font-size: 18px;  
 }
 
 input, textarea {
-    width: 100%;  /* Ajusta el ancho al 100% del contenedor */
+    width: 100%; 
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    font-size: 16px;  /* Tamaño más grande */
+    font-size: 16px; 
 }
+
+.container__trust {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.card__trust_box__card-primary img {
+    width: 150px; 
+    height: auto; 
+}
+
+
+.card__trust_box__card-primary {
+    background: #fff; /* Color de fondo de la tarjeta */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    margin: 10px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio interno de la tarjeta */
+    width: 30%; /* Ancho de cada tarjeta */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+}
+
 
 button {
     padding: 15px 30px;
-    background-color: #fcdc60;  /* Color del header */
-    color: #333;  /* Color oscuro */
+    background-color: #fcdc60; 
+    color: #333; 
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -393,11 +417,29 @@ button {
     width: 100%;
 }
 
+.equipo{
+    text-align: center;
+}
+
+.equipo h1{
+    text-align: center;
+}
+
+.team-section{
+    text-align: center;
+    flex-direction: row;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px;
+}
+
 button:hover {
     background-color: #e6c656;
 }
 
-/* Sección de la imagen */
 .image-container {
     display: flex;
     justify-content: center;
@@ -405,7 +447,7 @@ button:hover {
 }
 
 .image-container img {
-    max-width: 200px;  /* Ajusta el tamaño de la imagen */
+    max-width: 200px;  
 }
 
 .video-section{
